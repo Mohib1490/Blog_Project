@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title | Dev with Mohib</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation will go here -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Dev with Mohib</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="indext.html">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Article Content -->
+                <article>
+                    <header class="mb-4 position-relative">
+                        <h1 class="fw-bold mb-1">Welcome to Dev with Mohib!</h1>
+                        <div class="text-muted fst-italic mb-2">Posted on January 1, 2024 by Md Mohib Ullah</div>
+                        <div class="mb-3">
+                            <span class="badge bg-secondary">Technology</span>
+                            <span class="badge bg-secondary ms-1">Web Design</span>
+                        </div>
+
+                        <!-- Share button positioned absolutely at top right -->
+                        <div class="position-absolute top-0 end-0 mt-2 me-2">
+                            <div class="dropdown">
+                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button"
+                                    id="shareDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-share"></i> Share
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="shareDropdown">
+                                    <li><a class="dropdown-item" href="#"><i
+                                                class="bi bi-facebook me-2"></i>Facebook</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="bi bi-twitter me-2"></i>Twitter</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i
+                                                class="bi bi-linkedin me-2"></i>LinkedIn</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="bi bi-link-45deg me-2"></i>Copy
+                                            link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+
+                    <div id="articleCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#articleCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#articleCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#articleCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item active">
+                                <img src="/Project/img/article.jpg" class="d-block w-100" alt="Article Image 1"
+                                    style="height: 400px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Project/img/article2.jpg" class="d-block w-100" alt="Article Image 2"
+                                    style="height: 400px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Project/img/article3.jpg" class="d-block w-100" alt="Article Image 3"
+                                    style="height: 400px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#articleCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#articleCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                        <!-- Blog posts grid -->
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Post 1">
+                                    <div class="card-body">
+                                        <div class="mb-2">
+                                            <span class="badge bg-success">Nature</span>
+                                            <span class="text-muted ms-2">April 25, 2025</span>
+                                        </div>
+                                        <h3 class="card-title h5">Exploring the Great Outdoors</h3>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Post 2">
+                                    <div class="card-body">
+                                        <div class="mb-2">
+                                            <span class="badge bg-warning text-dark">Travel</span>
+                                            <span class="text-muted ms-2">April 24, 2025</span>
+                                        </div>
+                                        <h3 class="card-title h5">Top Travel Destinations for 2025</h3>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the
+                                            bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <section class="mb-5">
+                        <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui
+                            mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus
+                            rhoncus ut eleifend nibh porttitor.</p>
+                        <section class="mb-5">
+                            <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui
+                                mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus
+                                rhoncus ut eleifend nibh porttitor.</p>
+
+                            <p class="fs-5 mb-4">Ut in nulla enim. Phasellus molestie magna non est bibendum non
+                                venenatis
+                                nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor
+                                posuere.
+                            </p>
+
+                            <h2 class="fw-bolder mb-4 mt-5">Power of deep learning</h2>
+                            <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui
+                                mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus
+                                rhoncus ut eleifend nibh porttitor.</p>
+
+                            <h3 class="fw-bolder mb-4 mt-5">To develop your carrer learn deep learning </h3>
+                            <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui
+                                mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                            <pre><code>// Example code block
+function helloWorld() {
+    console.log("Hello, world!");
+}</code></pre>
+                            <p class="fs-5 mb-4">This is some additional paragraph placeholder content.</p>
+                        </section>
+
+                        <!-- Tags -->
+                        <div class="mb-5">
+                            <span class="fw-bold">Tags:</span>
+                            <a href="#" class="text-decoration-none me-2">#webdesign</a>
+                            <a href="#" class="text-decoration-none me-2">#bootstrap</a>
+                            <a href="#" class="text-decoration-none">#html</a>
+                        </div>
+
+                        <!-- Share buttons -->
+                        <div class="card mb-5">
+                            <div class="card-header">
+                                Share this post
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex gap-3">
+                                    <button class="btn btn-outline-primary"><i
+                                            class="bi bi-facebook me-2"></i>Facebook</button>
+                                    <button class="btn btn-outline-info"><i
+                                            class="bi bi-twitter me-2"></i>Twitter</button>
+                                    <button class="btn btn-outline-danger"><i
+                                            class="bi bi-pinterest me-2"></i>Pinterest</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comments section -->
+                        <section class="mb-5">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h3 class="fw-bold mb-4">Comments</h3>
+
+                                    <!-- Comment form -->
+                                    <form class="mb-5">
+                                        <div class="mb-3">
+                                            <textarea class="form-control" rows="3"
+                                                placeholder="Join the discussion and leave a comment!"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+
+                                    <!-- Comment with nested comments -->
+                                    <div class="d-flex mb-4">
+                                        <div class="flex-shrink-0">
+                                            <img class="rounded-circle" src="https://via.placeholder.com/50" alt="User">
+                                        </div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">Commenter Name</div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui
+                                                mauris.</p>
+
+                                            <!-- Nested comment -->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0">
+                                                    <img class="rounded-circle" src="https://via.placeholder.com/50"
+                                                        alt="User">
+                                                </div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">Commenter Name</div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                        in
+                                                        dui mauris.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single comment -->
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <img class="rounded-circle" src="https://via.placeholder.com/50" alt="User">
+                                        </div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">Commenter Name</div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui
+                                                mauris.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                </article>
+            </div>
+
+            <!-- Sidebar (same as index.html) -->
+        </div>
+    </main>
+
+
+    <!-- Footer (same as index.html) -->
+
+    <!-- Footer will go here -->
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>About My Blog</h5>
+                    <p>A blog about technology, travel, food, and lifestyle. Sharing experiences and knowledge with the
+                        world.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="indext.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <p class="mt-3">Subscribe to our newsletter</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <button class="btn btn-primary ms-2">Go</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Developer Mohib. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to format and display the current date
+        function displayCurrentDate() {
+            const options = { month: 'long', day: 'numeric', year: 'numeric' };
+            const today = new Date();
+            document.getElementById('currentDate').textContent = today.toLocaleDateString('en-US', options);
+        }
+
+        // Call the function when the page loads
+        window.onload = displayCurrentDate;
+    </script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

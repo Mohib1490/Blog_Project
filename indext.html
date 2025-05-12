@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev with Mohib</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="blog.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation will go here -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="indext.html">Dev with Mohib</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="indext.html">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <!-- Image Slider/Carousel -->
+    <div id="articleCarousel" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#articleCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#articleCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#articleCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+                <img src="/Project/img/article.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;"
+                    alt="Article Image 1" loading="eager">
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100" style="top: 0">
+                    <h1 class="display-4 fw-bold text-white">Welcome to Dev With Mohib</h1>
+                    <h3 class="text-white mt-3">A professional Software Developer</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/Project/img/article2.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;"
+                    alt="Article Image 2" loading="lazy">
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100" style="top: 0">
+                    <h1 class="display-4 fw-bold text-white">Welcome to Dev With Mohib</h1>
+                    <h3 class="text-white mt-3">A professional Software Developer</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/Project/img/article3.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;"
+                    alt="Article Image 3" loading="lazy">
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100" style="top: 0">
+                    <h1 class="display-4 fw-bold text-white">Welcome to Dev With Mohib</h1>
+                    <h3 class="text-white mt-3">A professional Software Developer</h3>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#articleCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#articleCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <main class="container my-5">
+        <div class="row">
+            <!-- Main content area -->
+            <div class="col-lg-8">
+                <h1 class="mb-4">Latest Posts</h1>
+
+                <!-- Featured Post -->
+                <div class="card mb-4">
+                    <img src="/Project/img/Blog1.jpg" class="card-img-top" style="height: 180px; object-fit: cover;"
+                        alt="Featured Post">
+                    <div class="card-body">
+                        <div class="mb-2">
+                            <span class="badge bg-primary">Technology</span>
+                            <span class="text-muted ms-2">April 26, 2025</span>
+                        </div>
+                        <h2 class="card-title">Learn latest technology</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui
+                            mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                        <a href="article.html" class="btn btn-primary">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Blog posts grid -->
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="/Project/img/Blog2.jpg" class="card-img-top"
+                                style="height: 180px; object-fit: cover;" alt="Post 1">
+
+                            <div class="card-body">
+                                <div class="mb-2">
+                                    <span class="badge bg-success">Nature</span>
+                                    <span class="text-muted ms-2">April 25, 2025</span>
+                                </div>
+                                <h3 class="card-title h5">Exploring the Great Outdoors</h3>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="/Project/img/Blog3.jpg" class="card-img-top"
+                                style="height: 180px; object-fit: cover;" alt="Post 2">
+                            <div class="card-body">
+                                <div class="mb-2">
+                                    <span class="badge bg-warning text-dark">Travel</span>
+                                    <span class="text-muted ms-2">April 24, 2025</span>
+                                </div>
+                                <h3 class="card-title h5">Top Travel Destinations for 2025</h3>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        About the Author
+                    </div>
+                    <div class="card-body">
+                        <img src="/Project/img/Mohib.png" class="rounded-circle mb-3" alt="Author" width="70">
+                        <p class="card-text">Mohib Ullah is a passionate blogger with expertise in technology, travel,
+                            and
+                            lifestyle. He has been writing for over 5 years.</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="btn btn-outline-secondary btn-sm">Follow</a>
+                            <a href="contact.html" class="btn btn-outline-info btn-sm">Contact</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Categories
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#">Technology</a></li>
+                                    <li><a href="#">Travel</a></li>
+                                    <li><a href="#">Food</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#">Lifestyle</a></li>
+                                    <li><a href="#">Business</a></li>
+                                    <li><a href="#">Sports</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Subscribe
+                    </div>
+                    <div class="card-body">
+                        <p>Get the latest posts delivered right to your inbox.</p>
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your email">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Main content will go here -->
+
+    <!-- Footer will go here -->
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>About My Blog</h5>
+                    <p>A blog about technology, travel, food, and lifestyle. Sharing experiences and knowledge with the
+                        world.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="indext.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="https://www.facebook.com/mohibullah00/about/" class="text-white"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <p class="mt-3">Subscribe to our newsletter</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <button class="btn btn-primary ms-2">Go</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Developer Mohib. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to format and display the current date
+        function displayCurrentDate() {
+            const options = { month: 'long', day: 'numeric', year: 'numeric' };
+            const today = new Date();
+            document.getElementById('currentDate').textContent = today.toLocaleDateString('en-US', options);
+        }
+
+        // Call the function when the page loads
+        window.onload = displayCurrentDate;
+    </script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
